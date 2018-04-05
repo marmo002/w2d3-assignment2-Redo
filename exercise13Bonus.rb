@@ -15,6 +15,7 @@ fav_artists.each do |artist|
   end
 end
 puts
+
 ages = ages.map do |age|
   age += 1
 end
