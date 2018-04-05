@@ -11,3 +11,18 @@ def students_per_cohort(hash)
 end
 
 students_per_cohort(students)
+puts "****************************************\n\n"
+
+students[:cohort4] = 43
+
+puts students.keys
+
+students.each do |cohort, population|
+  students[cohort] = (population * 1.05).round
+end
+
+puts students
+puts
+students.delete(:cohort2)
+
+puts students
