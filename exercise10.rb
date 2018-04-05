@@ -4,13 +4,13 @@ students = {
   :cohort3 => 22,
 }
 
-def students_per_cohort(hash)
+def displaying_values(hash)
   hash.each do |k,v|
-    puts "#{k}: #{v} students"
+    puts "#{k}: #{v}"
   end
 end
 
-students_per_cohort(students)
+displaying_values(students)
 puts "****************************************\n\n"
 
 students[:cohort4] = 43
@@ -36,3 +36,14 @@ def total_sutdents(hash)
 end
 
 puts "Total number of students is: #{total_sutdents(students)}"
+puts "****************************************\n\n"
+
+staff = {
+  cohort1: "Sean",
+  cohort2: "Gurjant",
+  cohort3: "Daniel",
+  cohort4: "Devon",
+  cohort5: "Natalie",
+}
+
+displaying_values(staff)
