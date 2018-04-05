@@ -26,3 +26,13 @@ puts
 students.delete(:cohort2)
 
 puts students
+
+def total_sutdents(hash)
+  count = 0
+  hash.each do |_name, population|
+    count += population
+  end
+  count
+end
+
+puts "Total number of students is: #{total_sutdents(students)}"
